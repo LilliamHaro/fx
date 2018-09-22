@@ -43,20 +43,17 @@ $(document).ready(function(){
 
     followMouse();
 
-    function hola(){
-        alert('465');
-    }
-    $('#btn').on('click',function(event){
+    setTimeout(function(){
+        $('.loader').addClass('loader-out');
+    },5000)
 
-        alert(12345678889)
-    })
 
-    $('.btn2').on('click',function(event){
+    setTimeout(function(){
+        $('#ball').addClass('opacity-1');
+    },6000)
 
-        alert(123456788888888888888888889)
-    })
+    
 
-    // document.getElementById("btn").addEventListener("click", hola);
-
+   
     
 })

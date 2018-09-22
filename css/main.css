@@ -21,14 +21,36 @@ body {
 #ball {
     width: 100px;
     height: 100px;
-    background: url('../img/body-radial-left.png')!important;
+    background: rgba(252, 252, 252, 0.1) !important;
     background-size: 100% 100%;
     background: none;
-    /* border: 1px solid grey; */
     border-radius: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -10px 0 0 -10px;
     pointer-events: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+.opacity-1 {
+    opacity: 1!important;
+}
+
+main {
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: red;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 2s;
+}
+.loader-out{
+    width: 0;
 }
