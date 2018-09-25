@@ -44,6 +44,10 @@ $(document).ready(function(){
     followMouse();
 
     setTimeout(function(){
+        $('.line-loader').addClass('w-100');
+    },0)
+
+    setTimeout(function(){
         $('.loader-1').addClass('loader-out');
     },2000)
 
@@ -52,6 +56,7 @@ $(document).ready(function(){
     },2250)
     setTimeout(function(){
         $('.loader-3').addClass('loader-out');
+        $('main').fadeIn('slow');
     },2500)
 
     setTimeout(function(){
