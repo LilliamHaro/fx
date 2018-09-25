@@ -44,9 +44,15 @@ $(document).ready(function(){
     followMouse();
 
     setTimeout(function(){
-        $('.loader').addClass('loader-out');
-    },5000)
+        $('.loader-1').addClass('loader-out');
+    },2000)
 
+    setTimeout(function(){
+        $('.loader-2').addClass('loader-out');
+    },2250)
+    setTimeout(function(){
+        $('.loader-3').addClass('loader-out');
+    },2500)
 
     setTimeout(function(){
         $('#ball').addClass('opacity-1');
