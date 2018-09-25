@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #161616;
+  background:black;
   color: white;
 }
 
@@ -55,7 +55,7 @@ body {
   position: relative;
 }
 .d-none {
-    display: none;
+  display: none;
 }
 .loader {
   position: absolute;
@@ -69,15 +69,15 @@ body {
 }
 
 .loader-1 {
-  background: red;
+  background: #fff;
   z-index: 6;
 }
 .loader-3 {
-  background: green;
+  background: rgb(172, 172, 172);
   z-index: 4;
 }
 .loader-2 {
-  background: blue;
+  background: rgb(88, 88, 88);
   z-index: 5;
 }
 
@@ -96,4 +96,78 @@ body {
 
 .texto-central {
   line-height: calc(100vh - 5px);
+}
+
+
+
+.cara {
+  margin: 20px auto;
+  display: block;
+  width: 50%;
+  height: 400px;
+  -webkit-mask-image: url('../img/urban-sprite.png');
+  mask-image: url('../img/urban-sprite.png');
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+}
+
+.mascara-1 {
+  -webkit-animation: mask-play 1.4s steps(29) forwards;
+ animation: mask-play 1.4s steps(29) forwards;
+}
+
+@keyframes mask-play {
+  from {
+    -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0% 0;
+            mask-position: 0% 0;
+  }
+}
+
+
+.cara-2 {
+  width: 500px;
+  height: 200px;
+  position: relative;
+}
+
+.base {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url('../img/urban-sprite.png');
+  mask-image: url('../img/urban-sprite.png');
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  /* -webkit-mask-position: 100% 0; */
+  /* mask-position: 100% 0; */
+}
+.one {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.dos {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
