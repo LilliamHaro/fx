@@ -41,31 +41,28 @@ $(document).ready(function() {
   followMouse();
 
   setTimeout(function() {
-    $(".line-loader").addClass("w-100");
-  }, 0);
+    $(".line-loader").addClass("line-loaded");
+  }, 500);
 
-  // setTimeout(function(){
-  //     $('.cara').addClass('mascara-1');
-  // },400)
+  setTimeout(function() {
+    $(".tittle-flip").addClass("opacity-1");
+    $(".tittle-flip").addClass("tittle-flip");
+  }, 2500);
 
   setTimeout(function() {
     $(".loader-1").addClass("loader-out");
-  }, 2000);
+  }, 4800);
 
   setTimeout(function() {
     $(".loader-2").addClass("loader-out");
-  }, 2250);
+  }, 5050);
   setTimeout(function() {
     $(".loader-3").addClass("loader-out");
     $("main").fadeIn("slow");
     setTimeout(function() {
       $(".cara").addClass("mascara-1");
     }, 400);
-
-    // setTimeout(function() {
-    //   $(".dos").addClass("mascara-1");
-    // }, 1800);
-  }, 2500);
+  }, 5300);
 
   setTimeout(function() {
     $("#ball").addClass("opacity-1");

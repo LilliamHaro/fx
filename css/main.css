@@ -69,15 +69,15 @@ body {
 }
 
 .loader-1 {
-  background: #fff;
+  background: rgb(171, 111, 228);
   z-index: 6;
 }
 .loader-3 {
-  background: rgb(172, 172, 172);
+  background: rgb(202, 7, 220);
   z-index: 4;
 }
 .loader-2 {
-  background: rgb(88, 88, 88);
+  background: rgb(142, 20, 153);
   z-index: 5;
 }
 
@@ -85,89 +85,32 @@ body {
   width: 0;
 }
 .line-loader {
+  margin-left: 100%;
   width: 0;
   height: 5px;
   background: #fff;
   transition: all 2s;
 }
-.w-100 {
+.line-loaded {
   width: 100%;
+  margin-left: 0%;
 }
 
-.texto-central {
-  line-height: calc(100vh - 5px);
+.texto {
+  height: calc(100vh - 5px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tittle-flip {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.tittle-fliped{
+  color: red
 }
 
-
-
-.cara {
-  margin: 20px auto;
-  display: block;
-  width: 50%;
-  height: 400px;
-  -webkit-mask-image: url('../img/urban-sprite.png');
-  mask-image: url('../img/urban-sprite.png');
-  -webkit-mask-position: center center;
-  mask-position: center center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 3000% 100%;
-  mask-size: 3000% 100%;
-  -webkit-mask-position: 100% 0;
-  mask-position: 100% 0;
-}
-
-.mascara-1 {
-  -webkit-animation: mask-play 1.4s steps(29) forwards;
- animation: mask-play 1.4s steps(29) forwards;
-}
-
-@keyframes mask-play {
-  from {
-    -webkit-mask-position: 100% 0;
-            mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0% 0;
-            mask-position: 0% 0;
-  }
-}
-
-
-.cara-2 {
-  width: 500px;
-  height: 200px;
-  position: relative;
-}
-
-.base {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -webkit-mask-image: url('../img/urban-sprite.png');
-  mask-image: url('../img/urban-sprite.png');
-  -webkit-mask-position: center center;
-  mask-position: center center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 3000% 100%;
-  mask-size: 3000% 100%;
-  /* -webkit-mask-position: 100% 0; */
-  /* mask-position: 100% 0; */
-}
-.one {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.dos {
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+main {
+ min-height: 100vh; 
 }
