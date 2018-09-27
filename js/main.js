@@ -38,27 +38,20 @@ $(document).ready(function() {
     ball.style.top = y + "px";
   };
 
-  followMouse();
-
+   /*line transition*/
   setTimeout(function() {
     $(".line-loader").addClass("line-loaded");
   }, 500);
 
-  /*line-transition 2s*/
+   // transition cube
   setTimeout(function() {
-    /*opacity transition 0.5s*/
-    /*1s wait*/
     $(".cube").addClass("opacity-1");
   }, 3000);
-
-  /*giro transition 0.5s*/
-  /*1s wait*/
   setTimeout(function() {
     $(".cube").addClass("giro");
   },4500);
 
-  /*width transition 0.5s*/
-   /*0.5s wait*/
+  // loader sheades
   setTimeout(function() {
     $(".loader-1").addClass("loader-out");
     setTimeout(function() {
@@ -69,7 +62,9 @@ $(document).ready(function() {
       $("main").fadeIn("slow");
     }, 400);
   }, 5500);
-
+  
+  // mouse ball 
+  followMouse();
   setTimeout(function() {
     $("#ball").addClass("opacity-1");
   }, 6700);

@@ -8,6 +8,20 @@ body {
   color: white;
 }
 
+/* helpers */
+
+.opacity-1 {
+  opacity: 1 !important;
+}
+.relative {
+  position: relative;
+}
+.d-none {
+  display: none;
+}
+/* ------------------------------------------------------------------ */
+
+/* scroll */
 ::-webkit-scrollbar {
   /* width: 8px; */
   width: 0px;
@@ -21,7 +35,9 @@ body {
   -webkit-box-shadow: none;
   background: transparent;
 }
+/* ------------------------------------------------------------------ */
 
+/* mouse ball */
 .wrap {
   position: absolute;
   top: 0;
@@ -31,7 +47,6 @@ body {
   overflow: hidden;
   z-index: -5;
 }
-
 #ball {
   width: 100px;
   height: 100px;
@@ -47,16 +62,9 @@ body {
   transition: opacity 1s ease-out;
   opacity: 0;
 }
-.opacity-1 {
-  opacity: 1 !important;
-}
+/* ------------------------------------------------------------------ */
 
-.relative {
-  position: relative;
-}
-.d-none {
-  display: none;
-}
+/* loader animations */
 .loader {
   position: absolute;
   width: 100%;
@@ -95,17 +103,12 @@ body {
   width: 100%;
   /* margin-left: 0%; */
 }
-
 .texto {
   height: calc(100vh - 5px);
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-main {
-  min-height: 100vh;
 }
 
 .cube {
@@ -132,3 +135,11 @@ h1 {
 .giro {
   transform: rotateX(89deg) translateZ(100px);
 }
+
+/* ------------------------------------------------------------------ */
+
+/* content */
+main {
+  min-height: 100vh;
+}
+
