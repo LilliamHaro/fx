@@ -132,9 +132,3 @@ h1 {
 .giro {
   transform: rotateX(89deg) translateZ(100px);
 }
-
-@media (max-width:600px) {
-  .loader {
-    transition: all 0.2s;
-  }
-}

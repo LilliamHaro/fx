@@ -63,11 +63,11 @@ $(document).ready(function() {
     $(".loader-1").addClass("loader-out");
     setTimeout(function() {
       $(".loader-2").addClass("loader-out");
-    }, 400);
+    }, 200);
     setTimeout(function() {
       $(".loader-3").addClass("loader-out");
       $("main").fadeIn("slow");
-    }, 800);
+    }, 400);
   }, 5500);
 
   setTimeout(function() {
