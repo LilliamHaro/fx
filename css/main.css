@@ -11,7 +11,10 @@ body {
 /* helpers */
 
 .opacity-1 {
-  opacity: 1 !important;
+  opacity: 1!important;
+}
+.opacity-0 {
+  opacity: 0!important;
 }
 .relative {
   position: relative;
@@ -95,16 +98,16 @@ body {
 .line-loader {
   /* margin-left: 100%; */
   width: 0;
-  height: 5px;
+  height: 3px;
   background: #fff;
-  transition: all 2s;
+  transition: width 2s;
 }
 .line-loaded {
   width: 100%;
   /* margin-left: 0%; */
 }
 .texto {
-  height: calc(100vh - 5px);
+  height: calc(100vh - 3px);
   width: 100vw;
   display: flex;
   align-items: center;
@@ -122,12 +125,12 @@ h1 {
 }
 .face-cube {
   text-align: center;
-  box-shadow: 0 0 3px #2b2b2b;
   height: 200px;
   border-radius: 4px;
 }
 .year {
   transform: translateZ(100px);
+  transition: opacity 0.5s;
 }
 .welcome {
   transform: rotateX(-90deg) translateZ(-120px);
@@ -143,3 +146,27 @@ main {
   min-height: 100vh;
 }
 
+.box-transform-screen {
+  width: 50%;
+  background:blue;
+  padding:25px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s, width 0.8s ;
+}
+
+.box-distor {
+    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
+}
+.full-screen {
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width:1024px) {
+  #ball {
+    display: none;
+  }
+}

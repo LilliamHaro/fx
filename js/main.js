@@ -38,18 +38,19 @@ $(document).ready(function() {
     ball.style.top = y + "px";
   };
 
-   /*line transition*/
+  /*line transition*/
   setTimeout(function() {
     $(".line-loader").addClass("line-loaded");
   }, 500);
 
-   // transition cube
+  // transition cube
   setTimeout(function() {
     $(".cube").addClass("opacity-1");
   }, 3000);
   setTimeout(function() {
     $(".cube").addClass("giro");
-  },4500);
+    $(".year").addClass("opacity-0");
+  }, 4500);
 
   // loader sheades
   setTimeout(function() {
@@ -62,10 +63,20 @@ $(document).ready(function() {
       $("main").fadeIn("slow");
     }, 400);
   }, 5500);
-  
-  // mouse ball 
+
+  // mouse ball
   followMouse();
   setTimeout(function() {
     $("#ball").addClass("opacity-1");
   }, 6700);
+
+  $(".box-transform-screen").on("click", function(event) {
+    $(".box-transform-screen").addClass("box-distor");
+    setTimeout(function() {
+      $(".box-transform-screen").removeClass("box-distor");
+    }, 600);
+    setTimeout(function() {
+      $(".box-transform-screen").addClass("full-screen");
+    }, 700);
+  });
 });
