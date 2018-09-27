@@ -85,7 +85,7 @@ body {
   width: 0;
 }
 .line-loader {
-  margin-left: 100%;
+  /* margin-left: 100%; */
   width: 0;
   height: 5px;
   background: #fff;
@@ -93,7 +93,7 @@ body {
 }
 .line-loaded {
   width: 100%;
-  margin-left: 0%;
+  /* margin-left: 0%; */
 }
 
 .texto {

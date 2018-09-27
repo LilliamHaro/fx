@@ -57,23 +57,18 @@ $(document).ready(function() {
     $(".cube").addClass("giro");
   },4500);
 
-
   /*width transition 0.5s*/
    /*0.5s wait*/
   setTimeout(function() {
     $(".loader-1").addClass("loader-out");
+    setTimeout(function() {
+      $(".loader-2").addClass("loader-out");
+    }, 400);
+    setTimeout(function() {
+      $(".loader-3").addClass("loader-out");
+      $("main").fadeIn("slow");
+    }, 800);
   }, 5500);
-
-   /*0.5s wait*/
-  setTimeout(function() {
-    $(".loader-2").addClass("loader-out");
-  }, 6000);
-
-   /*0.5s wait*/
-  setTimeout(function() {
-    $(".loader-3").addClass("loader-out");
-    $("main").fadeIn("slow");
-  }, 6500);
 
   setTimeout(function() {
     $("#ball").addClass("opacity-1");
