@@ -44,27 +44,38 @@ $(document).ready(function() {
     $(".line-loader").addClass("line-loaded");
   }, 500);
 
+  /*line-transition 2s*/
   setTimeout(function() {
-    $(".tittle-flip").addClass("opacity-1");
-    $(".tittle-flip").addClass("tittle-flip");
-  }, 2500);
+    /*opacity transition 0.5s*/
+    /*1s wait*/
+    $(".cube").addClass("opacity-1");
+  }, 3000);
 
+  /*giro transition 0.5s*/
+  /*1s wait*/
+  setTimeout(function() {
+    $(".cube").addClass("giro");
+  },4500);
+
+
+  /*width transition 0.5s*/
+   /*0.5s wait*/
   setTimeout(function() {
     $(".loader-1").addClass("loader-out");
-  }, 4800);
+  }, 5500);
 
+   /*0.5s wait*/
   setTimeout(function() {
     $(".loader-2").addClass("loader-out");
-  }, 5050);
+  }, 6000);
+
+   /*0.5s wait*/
   setTimeout(function() {
     $(".loader-3").addClass("loader-out");
     $("main").fadeIn("slow");
-    setTimeout(function() {
-      $(".cara").addClass("mascara-1");
-    }, 400);
-  }, 5300);
+  }, 6500);
 
   setTimeout(function() {
     $("#ball").addClass("opacity-1");
-  }, 6000);
+  }, 6700);
 });
