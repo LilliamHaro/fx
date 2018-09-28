@@ -58,7 +58,7 @@ $(function() {
 		mouseLastX = mouseX;
 		mouseLastY = mouseY;
 
-		setTimeout(mouseSpeed, 50);
+		setTimeout(mouseSpeed, 15);
 	}
 	mouseSpeed();
 
@@ -76,8 +76,8 @@ $(function() {
 		button.append($canvas);
 
 		canvas = $canvas.get(0);
-		canvas.width = buttonWidth+100;
-		canvas.height = buttonHeight+100;
+		canvas.width = buttonWidth+125;
+		canvas.height = buttonHeight+125;
 		context = canvas.getContext('2d');
 
 		// Add points

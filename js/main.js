@@ -75,10 +75,9 @@ $(document).ready(function() {
     $(".screen-bg").addClass("full-screen-bg");
   });
 
-  $('.screen-bg').on('click',function(event){
+  $(".screen-bg").on("click", function(event) {
     $(".box-transform-screen").removeClass("full-screen");
     $(".screen-bg").removeClass("full-screen-bg");
-  })
+  });
+
 });
-
-
