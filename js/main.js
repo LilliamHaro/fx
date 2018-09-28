@@ -70,13 +70,13 @@ $(document).ready(function() {
     $("#ball").addClass("opacity-1");
   }, 6700);
 
-  $(".box-transform-screen").on("click", function(event) {
-    $(".box-transform-screen").addClass("box-distor");
-    setTimeout(function() {
-      $(".box-transform-screen").removeClass("box-distor");
-    }, 600);
-    setTimeout(function() {
-      $(".box-transform-screen").addClass("full-screen");
-    }, 700);
+  $(".box-proy").on("click", function(event) {
+    $(".box-transform-screen").addClass("full-screen");
+    $(".screen-bg").addClass("full-screen-bg");
   });
+
+  $('.screen-bg').on('click',function(event){
+    $(".box-transform-screen").removeClass("full-screen");
+    $(".screen-bg").removeClass("full-screen-bg");
+  })
 });
