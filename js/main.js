@@ -80,3 +80,5 @@ $(document).ready(function() {
     $(".screen-bg").removeClass("full-screen-bg");
   })
 });
+
+
